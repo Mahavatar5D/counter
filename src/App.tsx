@@ -1,9 +1,12 @@
-function App() {
+import React from 'react'
+import Counter from './components'
+
+function App () {
   return (
     <div className="App">
-      <h1>Works!</h1>
+      <Counter message="Total" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
