@@ -23,10 +23,14 @@
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
         "no-use-before-define": 0,
         "linebreak-style": 0
-      },
-      "settings": {
+    },
+    "settings": {
         "react": {
             "version": "detect"
         }
+    },
+    "globals": {
+        "React": true,
+        "JSX": true
     }
 }

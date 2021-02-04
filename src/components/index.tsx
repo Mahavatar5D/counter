@@ -1,18 +1,25 @@
 import React, { useState } from 'react'
 
 interface CounterProps {
-    message: string
+  message: string
 }
 
-const Counter: React.FC<CounterProps> = ({ message }: CounterProps) => {
+const Counter: React.FC<CounterProps> = ({ message }:CounterProps): JSX.Element => {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      <div
+        className={'outputMessageCounter'}
+      >
         {message}: {count}
       </div>
-      <button onClick={() => { setCount(count + 1) }}>Click me!</button>
+      <button
+        className={'inputMessageCounter'}
+        onClick={() => { setCount(count + 1) }}
+      >
+        Click me!
+      </button>
     </>
   )
 }
